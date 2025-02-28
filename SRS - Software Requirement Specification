@@ -1,1 +1,117 @@
-
+Software Requirements Specification
+(SRS)
+E-Commerce Website Introduction
+1.1 Purpose
+The purpose of this document is to outline the functional and non-functional requirements for an
+e-commerce website that allows users to browse, search, and purchase products securely.
+1.2 Scope
+The e-commerce platform will provide a seamless shopping experience with a user-friendly
+interface, secure payment options, and order tracking functionalities. The system will support
+multiple categories of products and enable sellers to list their items.
+1.3 Definitions
+Acronyms, and Abbreviations
+Admin: Website administrator who manages users, orders, and products.
+Seller: A user who lists products for sale.
+Buyer: A user who purchases products.
+SKU: Stock Keeping Unit.
+SSL: Secure Sockets Layer.
+Functional Requirements The system’s functional requirements are described in User Story
+format.
+2.1 User Registration and Authentication
+User Story: As a user, I want to create an account so that I can access the platform.
+Confirmation: Users should be able to register using an email and password or third-party
+authentication (Google, Facebook, etc.).
+2.2 Product Browsing and Search
+User Story: As a buyer, I want to search for products by category, name, and price range so that
+I can find the products I need.
+Confirmation: The system should display search results based on keywords, categories, and
+filters.
+2.3 Product Details
+User Story: As a buyer, I want to view product details so that I can make an informed purchase
+decision.
+Confirmation: Each product should display its name, description, price, images, reviews, and
+availability.
+2.4 Shopping Cart
+User Story: As a buyer, I want to add products to my cart so that I can purchase multiple items
+at once.
+Confirmation: Users should be able to add/remove items from their cart and view the total price
+before checkout.
+2.5 Secure Payment Processing
+User Story: As a buyer, I want to make payments securely so that my financial information is
+protected.
+Confirmation: The system should support multiple payment methods, including credit/debit
+cards, PayPal, and digital wallets.
+2.6 Order Management
+User Story: As a buyer, I want to track my orders so that I can know their status. Confirmation:
+Users should be able to view order status updates (e.g., Pending, Shipped, Delivered).
+2.7 Seller Dashboard
+User Story: As a seller, I want to list my products and track sales so that I can manage my store
+effectively.
+Confirmation: The system should allow sellers to add/edit products, view orders, and manage
+inventory.
+2.8 Customer Reviews and Ratings
+User Story: As a buyer, I want to leave reviews and ratings for products so that I can share my
+experience with others.
+Confirmation: Users should be able to rate products and leave text-based reviews.
+2.9 Admin Panel
+User Story: As an admin, I want to manage users, orders, and products so that the platform runs
+smoothly.
+Confirmation: Admins should be able to approve/disapprove sellers, monitor transactions, and
+handle customer complaints.
+2.10 Secure and Convenient Login
+User Story: As a registered user, I want to log in to my account securely and easily, so that I can
+access my saved preferences, order history, and personalized recommendations.
+Confirmation: Users can log in using their registered email and password. Users receive an
+error message if they enter incorrect credentials. Users can reset their password via a "Forgot
+Password?" link. Users can log in using third-party authentication (Google, Facebook, etc.).
+Users remain logged in unless they choose to log out. Users see a "Remember Me" option to stay
+logged in on their device. The system locks the account temporarily after multiple failed login
+attempts for security.
+2.11 Proceed to Checkout
+User Story: As a registered or guest user, I want to review my cart and complete my purchase by
+providing shipping and payment details, so that I can successfully place an order on the
+e-commerce website.
+Confirmation: Users must provide shipping details (address, contact information). Users must
+choose a shipping method with estimated delivery time and cost. Users must select a payment
+method (credit/debit card, PayPal, etc.). Users can review order details before finalizing the
+purchase. A breakdown of costs, including taxes and shipping fees, is displayed. Users enter
+payment details securely. System validates the payment and confirms the transaction. Users
+receive a confirmation message with order details. An order confirmation email is sent to the
+user.
+2.12 Order Confirmation
+User Story: As a user who has completed a purchase, I want to receive an order confirmation
+with all necessary details, so that I can verify my order and track its status. Confirmation: Users
+are redirected to an order confirmation page after successful payment. The page displays the
+order number, item details, total cost, shipping address, and estimated delivery date. Users
+receive an email with a summary of their order, tracking number, and support details.
+2.13 Display High-Quality Product Images
+User Story: As a user browsing an e-commerce website, I want to view high-definition images
+of products so that I can see clear details and make an informed purchase decision.
+Confirmation:
+Each product page features high-resolution images (e.g., 1080p or higher). Users can zoom in on
+images without losing clarity. Products have multiple images showing various angles. Some
+products offer a 360° rotating view and short HD videos. Images load quickly and maintain
+quality across devices. Non-Functional Requirements
+3.1 Performance
+The system should handle at least 10,000 concurrent users. Page load time should be less than 2
+seconds.
+3.2 Security
+The platform must use SSL encryption for secure data transmission. User passwords should be
+hashed and stored securely. Implement role-based access control (RBAC) for different user
+types.
+3.3 Quality
+The system should be responsive and accessible on both desktop and mobile devices. Regular
+automated testing should ensure minimal bugs.
+3.4 Availability
+The platform should have 99.9% uptime. Implement automatic failover mechanisms to ensure
+availability.
+3.5 Maintainability
+The system should be modular to allow for easy updates and feature additions. Use
+well-documented APIs for third-party integrations.
+Constraints
+The system should be developed within 2 months. The platform should support multiple
+languages and currencies. The database should store transactional data for at least 1 year.
+Assumptions and Dependencies Users will have a stable internet connection. Payment gateway
+providers will handle financial transactions securely. Third-party services will be available and
+reliable. Appendix API documentation will be provided separately. UI/UX design guidelines will
+be maintained in a separate document.
