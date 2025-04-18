@@ -11,38 +11,23 @@ This project is an online GI products e-commerce platform built using PHP and My
 1. Clone or Download the Project
 Unzip the project folder to your desired local server directory (e.g., htdocs in XAMPP or www in WAMP).
 
-bash
-Copy
-Edit
 # Assuming you're using Git
 git clone <repository-url>
 2. Configure the Database
 a. Create a MySQL Database
 Create a database named:
 
-sql
-Copy
-Edit
 project_327
 b. Import the SQL File
 Import the project_327.sql file (located inside the project ZIP) into your database using phpMyAdmin or the MySQL CLI:
 
-bash
-Copy
-Edit
 mysql -u root -p project_327 < project_327.sql
 3. Set Up Database Connection
 Open the file:
 
-pgsql
-Copy
-Edit
 Project_327/server/connection.php
 And verify the connection details:
 
-php
-Copy
-Edit
 $conn = mysqli_connect("localhost", "root", "", "project_327")
         or die("Couldn't connect to database");
 If you're using a different username/password for MySQL, update the "root" and "" fields accordingly.
