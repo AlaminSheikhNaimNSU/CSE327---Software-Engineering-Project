@@ -1,3 +1,11 @@
+<?php
+
+session_start()
+
+
+?>
+
+
 <!DOCTYPE html>
 <html lang="en">
 <head>
@@ -27,19 +35,57 @@
             animation: moveLeftToRight 5s infinite alternate;
         }
     </style>
-</head>
-<body>
-    <header class="navbar navbar-dark sticky-top bg-dark flex-md-nowrap p-0 shadow">
-        <a class="navbar-brand col-md-3 col-lg-2 me-0 px-3" href="#">Company Name</a>
-        <button class=" navbar-toggler position-absulute d-md-none colla[sed" type="button">           
-        <span navbar="-toggler-icon"></span>
-        </button>
 
-        <div class="navbar-nav">
-            <div class="nav-item text-nowrap">
-                <a class="nav-link px-3" href="#">Sign Out</a>
-            </div>
-        </div>
-    </header>
+
 
     
+
+
+
+
+
+</head>
+<body>
+    <!------------------------------Navbar------------------------------->
+    
+    <nav class="navbar navbar-expand-lg navbar-light bg-light py-2 fixed-top">
+        <div class="container-fluid">
+          <img class="logos" src="assets/Img/bangladesh.png">
+          <!--h2 class="brand">Laptop Cafe</h2-->
+          <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+          </button>
+          <div class="collapse navbar-collapse nav-buttons" id="navbarSupportedContent">
+            <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+              
+              <li class="nav-item">
+                <a class="nav-link" href="index.php">Home</a>
+              </li>
+
+              <li class="nav-item">
+                <a class="nav-link" href="shop.php">Shop</a>
+              </li>
+
+              <li class="nav-item">
+                <a class="nav-link" href="#">Blog</a>
+              </li>
+
+              <li class="nav-item">
+                <a class="nav-link" href="contact.php">Contact US</a>
+              </li>
+
+              <li class="nav-item">
+                <a href="cart.php">
+                  <i class="fas fa-shopping-cart">
+                    <?php if(isset($_SESSION['quantity']) && $_SESSION['quantity'] != 0) { ?>
+                        <span class="cart-quantity"><?php echo $_SESSION['quantity']; ?></span>
+                      <?php } ?>
+                  </i></a>
+               <a href="account.php"><i class="fas fa-users"></i></a> 
+              </li>
+  
+            </ul>
+            
+          </div>
+        </div>
+      </nav>
