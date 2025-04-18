@@ -43,7 +43,7 @@ And verify the connection details:
 php
 Copy
 Edit
-$conn = mysqli_connect("localhost", "root", "", "project_299")
+$conn = mysqli_connect("localhost", "root", "", "project_327")
         or die("Couldn't connect to database");
 If you're using a different username/password for MySQL, update the "root" and "" fields accordingly.
 
