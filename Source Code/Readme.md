@@ -19,7 +19,7 @@ Create a database named:
 
 project_327
 b. Import the SQL File
-Import the project_327.sql file (located inside the project ZIP) into your database using phpMyAdmin or the MySQL CLI:
+Import the project_327.sql file  into your database using phpMyAdmin or the MySQL CLI:
 
 mysql -u root -p project_327 < project_327.sql
 3. Set Up Database Connection
