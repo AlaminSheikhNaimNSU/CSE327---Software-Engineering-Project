@@ -8,8 +8,7 @@ Project 327 is a web-based e-commerce platform tailored for GI (Geographical Ind
 This project is an online GI products e-commerce platform built using PHP and MySQL. It includes features like product browsing, user registration/login, shopping cart, and an admin panel.
 
 🚀 Setup Instructions
-1. Clone or Download the Project
-Unzip the project folder to your desired local server directory (e.g., htdocs in XAMPP or www in WAMP).
+1. Clone or Download the Project the project folder to your desired local server directory (e.g., htdocs in XAMPP or www in WAMP).
 
 # Assuming you're using Git
 git clone <repository-url>
