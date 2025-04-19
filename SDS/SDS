@@ -1,1 +1,93 @@
+# Software Design Specification (SDS)
+
+## Project Name: Project 327
+
+**System Type:** Web-based E-commerce Platform  
+**Language/Frameworks:** PHP, HTML/CSS, SQL, JavaScript (if any embedded)  
+**Database:** MySQL  
+**Version:** 1.0
+
+---
+
+## 1. Introduction
+
+### 1.1 Purpose
+This document defines the structure, components, and data flow of the Project 327 E-commerce website. It serves as a technical blueprint for developers, testers, and stakeholders.
+
+### 1.2 Scope
+The system allows users to browse products, manage their shopping cart, register/login, and place orders. It includes administrative back-end logic for order and product management.
+
+---
+
+## 2. System Overview
+
+### 2.1 Main Components
+
+- **Frontend Pages:** `index.php`, `shop.php`, `single_product.php`, `cart.php`, `checkout.php`, etc.
+- **Authentication:** `login.php`, `register.php`, `account.php`
+- **Database:** `327_Table Create.sql`
+- **Server Logic:** `connection.php`, `place_order.php`, `get_clothes.php`, `get_featured_products.php`
+- **Assets:** Images and styles under `assets/`
+- **Layouts:** `header.php`, `footer.php`
+
+---
+
+## 3. System Architecture
+
+### 3.1 MVC-style (loose)
+
+- **Model:** PHP server scripts and SQL database
+- **View:** HTML + CSS front-end files
+- **Controller:** Core PHP pages and handlers
+
+---
+
+## 4. Functional Requirements
+
+| Module               | Description                                      |
+|----------------------|--------------------------------------------------|
+| User Authentication  | Register and login users, manage sessions        |
+| Product Browsing     | Show products from database dynamically          |
+| Shopping Cart        | Add/remove items, update quantities              |
+| Checkout             | Collect user details, process orders             |
+| Order Handling       | Save orders into database                        |
+| Contact Page         | Possibly a form for customer support             |
+| Product Details Page | Show images and descriptions                     |
+
+---
+
+## 5. Database Design
+
+Expected tables from `327_Table Create.sql`:
+
+- `users`
+- `products`
+- `orders`
+- `order_items`
+
+---
+
+## 6. Non-Functional Requirements
+
+- **Performance:** Load featured products quickly on homepage
+- **Security:** Passwords should be hashed (TBD if done)
+- **Scalability:** Basic version; can scale with category-based filtering
+- **Responsiveness:** Uses CSS, check if media queries or frameworks are applied
+
+---
+
+## 7. Assumptions & Limitations
+
+- Admin panel not included or visible in current structure
+- Product catalog is fixed unless database updated manually
+- Image assets are served statically
+
+---
+
+## 8. Future Enhancements
+
+- Add admin dashboard
+- Include search and filter options
+- Integrate payment gateway
+- Add email notifications for orders
 
